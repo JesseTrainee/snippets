@@ -1,0 +1,36 @@
+{
+	"Styled Default": {
+		"prefix": "styled",
+		"body": [
+			"import styled, { css } from 'styled-components';",
+			"",
+			"export const Wrapper = styled.div`",
+			"\t${({ theme }) => css``}",
+			"`;",
+			""
+		],
+		"description": "Log output to console"
+	},
+	"component react": {
+		"prefix": "rfc",
+		"body": [
+			"import styled from 'styled-components';",
+			"",
+			"export type $1Props = {",
+			"\ttitle?: string;",
+			"};",
+			"",
+			"export const $1 = ({ title }: $1Props) => {",
+			"\treturn (",
+			"\t\t<Component>",
+			"\t\t\t<h1>Oi</h1>",
+			"\t\t\t<p>{title}</p>",
+			"\t\t</Component>",
+			"\t);",
+			"};",
+			"",
+			"export const Component = styled.div``"
+		],
+		"description": "Component React"
+	},
+}
